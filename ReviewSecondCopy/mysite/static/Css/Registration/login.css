@@ -1,0 +1,20 @@
+*, body, .container, form, input {
+    font-family: 'Comfortaa';
+    font-weight: 599;
+}
+
+input {
+    margin-top: 10px;
+}
+
+.Submit {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

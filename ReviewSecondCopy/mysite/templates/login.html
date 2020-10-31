@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="{% static 'Css/Registration/login.css' %}">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
+</head>
+<body>
+    <div class="container">
+        <form action="{% url 'Registration:user_login' %}" method="POST">
+            {% csrf_token %}
+            Username: <input type="text" name="username">
+            <br>
+            Password: <input type="password" name="password">
+            <br>
+            <input class="Submit" type="submit" value="Login">
+        </form>
+    </div>
+
+    <div class="navbarInLogin">
+        {% include 'navbar.html' %}
+    </div>
+</body>
+</html>
